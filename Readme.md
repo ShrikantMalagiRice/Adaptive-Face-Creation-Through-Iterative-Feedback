@@ -26,3 +26,8 @@ Before running the program, install all dependencies using:
 ```bash
 pip install -r requirements.txt
 
+## Running the Program
+
+```bash
+python final.py
+
