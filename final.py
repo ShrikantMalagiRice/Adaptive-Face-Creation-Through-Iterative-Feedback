@@ -1,121 +1,221 @@
-"""
-two_stage_with_plots.py
-
-A script that:
-  1) Takes user input describing a suspect's face.
-  2) Uses GLIGEN for bounding-box-based generation (intermediate).
-  3) Uses ControlNet to structurally refine that image (final).
-  4) Plots both images separately with matplotlib.
-
-Dependencies:
-  pip install diffusers transformers controlnet_aux omegaconf matplotlib safetensors
-
-Ensure you have:
-  - gligen_inference.py in the same folder (or adjust import).
-  - The correct paths for your GLIGEN and ControlNet++ checkpoints.
-
-Run:
-  python two_stage_with_plots.py
-"""
-
-import os
-import argparse
+import io
 import torch
+import matplotlib.pyplot as plt
 from PIL import Image
 from pathlib import Path
-from argparse import Namespace
-import matplotlib.pyplot as plt
 
-
-# ------------------------------
-# Import the GLIGEN "run()" function
-# ------------------------------
-# Make sure your gligen_inference.py is in the same directory or in PYTHONPATH
+# -------------------------------
+# Import from your existing code
+# (Make sure gligen_inference.py is accessible)
+# -------------------------------
 from gligen_inference import run as gligen_run
-
-# ------------------------------
-# Diffusers + ControlNet
-# ------------------------------
 from diffusers import ControlNetModel, StableDiffusionControlNetPipeline, UniPCMultistepScheduler
 from controlnet_aux import LineartDetector
 
+###########################################################################
+#      FIXED CHECKPOINT PATHS (unchanged), references your existing setup #
+###########################################################################
+GLIGEN_CKPT_TEXT_ONLY       = "./gligen_checkpoints/checkpoint_generation_text.pth"
+GLIGEN_CKPT_TEXT_AND_IMAGE  = "./gligen_checkpoints/checkpoint_generation_text.pth"
+CONTROLNET_CKPT_PATH        = "./ControlNet-checkpoints"
 
-def stage1_generate_with_gligen(
-    gligen_ckpt_path: str,
-    prompt: str,
-    output_path: str = "gligen_face.png"
-):
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+###########################################################################
+#  GLOBAL DICT FOR IN-MEMORY IMAGE "PATHS"                                #
+#  We'll monkey-patch Image.open so that, if someone tries to open a      #
+#  "fake path" from this dict, we return the stored PIL image.           #
+###########################################################################
+_image_memory_storage = {}  # key: string, value: PIL.Image
+
+_old_image_open = Image.open  # Original, unpatched Image.open
+
+def _mock_image_open(path, *args, **kwargs):
     """
-    Generates an image using GLIGEN with bounding-box constraints for the face.
-    Returns the path to the saved output image.
+    If path is in _image_memory_storage, return that PIL image instead of
+    reading from disk. Otherwise, call the original Image.open.
     """
-    # We'll use some example bounding boxes for "hair," "eyes," "mouth," etc.
-    # Adjust as you like. Format is [x0, y0, x1, y1] in normalized coords.
+    if path in _image_memory_storage:
+        # Return a copy so we don't mutate the original
+        return _image_memory_storage[path].copy()
+    else:
+        return _old_image_open(path, *args, **kwargs)
+
+###########################################################################
+#  1) HELPER: CAPTURE GLIGEN OUTPUT IN MEMORY INSTEAD OF DISK             #
+###########################################################################
+def _run_gligen_in_memory(meta, gligen_args):
+    """
+    Wraps gligen_inference.run() so it doesn't write to disk
+    but instead returns the PIL image in memory.
+
+    We also monkey-patch Image.open to intercept "fake paths" from meta["images"].
+    """
+    import io
+    from PIL import Image
+
+    # We'll monkey-patch *both* Image.save (to capture outputs)
+    # AND Image.open (to load any in-memory "fake path" references).
+    original_save = Image.Image.save
+
+    buffer_dict = {"pil_img": None}
+
+    def mock_save(self, fp, *args, **kwargs):
+        # capture the final output in memory
+        buf = io.BytesIO()
+        original_save(self, buf, format='PNG')
+        buf.seek(0)
+        buffer_dict["pil_img"] = Image.open(buf).copy()
+        buf.close()
+
+    # Patch both:
+    Image.open = _mock_image_open
+    Image.Image.save = mock_save
+    try:
+        # Run the GLIGEN pipeline
+        gligen_run(meta, gligen_args, starting_noise=None)
+    finally:
+        # Restore the original methods
+        Image.open = _old_image_open
+        Image.Image.save = original_save
+
+    if buffer_dict["pil_img"] is None:
+        raise RuntimeError("GLIGEN did not produce an image in memory.")
+
+    return buffer_dict["pil_img"]
+
+###########################################################################
+#  2) GLIGEN bounding-box generation (hair, eyes, scar)                   #
+###########################################################################
+def generate_gligen_default_boxes(prompt: str) -> Image.Image:
+    """
+    Generates a face (PIL image, 512x512) with GLIGEN using default bounding boxes
+    (hair, eyes, scar). Uses your text-only checkpoint.
+    """
+    from argparse import Namespace
+
     meta = {
-        "ckpt": gligen_ckpt_path,
+        "ckpt": GLIGEN_CKPT_TEXT_ONLY,
         "prompt": prompt,
-        "phrases": ["hair", "eyes", "scar"],  # example feature labels
+        "phrases": ["hair", "eyes", "scar"],
         "locations": [
-            [0.3, 0.1, 0.7, 0.3],  # bounding box for hair
+            [0.3, 0.1, 0.7, 0.3],   # bounding box for hair
             [0.35, 0.4, 0.65, 0.5], # bounding box for eyes
-            [0.4, 0.6, 0.5, 0.7],  # bounding box for scar
+            [0.4, 0.6, 0.5, 0.7],   # bounding box for scar
         ],
-        "save_folder_name": "gligen_output"
+        "save_folder_name": "gligen_temp"  # not actually used
     }
 
-    # Build gligen_inference arguments
     gligen_args = Namespace(
         folder="generation_samples",
         batch_size=1,
         no_plms=False,
         guidance_scale=7.5,
-        negative_prompt='longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality'
+        negative_prompt=(
+            "longbody, lowres, bad anatomy, bad hands, missing fingers, "
+            "extra digit, fewer digits, cropped, worst quality, low quality"
+        ),
     )
-    # Run GLIGEN
-    print(gligen_args)
-    gligen_run(meta, gligen_args, starting_noise=None)
 
-    # By default, saves to generation_samples/gligen_output/0.png
-    out_path = Path(gligen_args.folder) / meta["save_folder_name"] / "0.png"
-    if not out_path.exists():
-        raise FileNotFoundError(f"GLIGEN output not found at {out_path}")
+    result = _run_gligen_in_memory(meta, gligen_args)
+    return result.convert("RGB").resize((512, 512))
 
-    # Rename/copy to desired output filename
-    Image.open(out_path).convert("RGB").save(output_path)
-    print(f"[GLIGEN] Wrote intermediate image: {output_path}")
-
-    return output_path
-
-
-def stage2_refine_with_controlnet(
-    controlnet_checkpoint: str,
-    input_image_path: str,
-    prompt: str,
-    output_path: str = "final_refined_face.png",
-    device: str = "cuda"
-):
+###########################################################################
+#  3) GLIGEN with a full-image reference bounding box                     #
+###########################################################################
+def generate_gligen_full_image(prompt: str, ref_image_path: str) -> Image.Image:
     """
-    Uses ControlNet with a line-art detector to refine the structure of the
-    GLIGEN-generated face. Saves and returns path to final image.
+    Sends an entire reference image into GLIGEN as a bounding box covering
+    the entire canvas. Requires a text+image checkpoint.
     """
-    # Load lineart detector
+    from argparse import Namespace
+
+    meta = {
+        "ckpt": GLIGEN_CKPT_TEXT_AND_IMAGE,
+        "prompt": prompt,
+        "images": [ref_image_path],               # single bounding box
+        "phrases": ["placeholder"],               # matching length
+        "locations": [[0.0, 0.0, 1.0, 1.0]],       # fill entire canvas
+        "image_mask": [1],
+        "text_mask": [1],
+        "save_folder_name": "gligen_temp"
+    }
+
+    gligen_args = Namespace(
+        folder="generation_samples",
+        batch_size=1,
+        no_plms=False,
+        guidance_scale=7.5,
+        negative_prompt=(
+            "longbody, lowres, bad anatomy, bad hands, missing fingers, "
+            "extra digit, fewer digits, cropped, worst quality, low quality"
+        ),
+    )
+
+    result = _run_gligen_in_memory(meta, gligen_args)
+    return result.convert("RGB").resize((512, 512))
+
+###########################################################################
+#  4) GLIGEN with a full-image reference bounding box (from a PIL image)  #
+###########################################################################
+def generate_gligen_full_image_from_pil(prompt: str, pil_image: Image.Image) -> Image.Image:
+    """
+    Same as generate_gligen_full_image, but the "reference image" is a PIL object in memory.
+    We assign it a 'fake path' in _image_memory_storage and pass that to GLIGEN.
+    """
+    from argparse import Namespace
+    import uuid
+
+    # 1) Create a unique "fake path"
+    fake_path = f"inmemory://{uuid.uuid4()}"
+    # 2) Store the PIL image in the global dictionary
+    _image_memory_storage[fake_path] = pil_image.convert("RGB").resize((512, 512))
+
+    # 3) Prepare meta
+    meta = {
+        "ckpt": GLIGEN_CKPT_TEXT_AND_IMAGE,
+        "prompt": prompt,
+        "images": [fake_path],       # we pass the fake path
+        "phrases": ["placeholder"],
+        "locations": [[0.0, 0.0, 1.0, 1.0]],
+        "image_mask": [1],
+        "text_mask": [1],
+        "save_folder_name": "gligen_temp"
+    }
+
+    gligen_args = Namespace(
+        folder="generation_samples",
+        batch_size=1,
+        no_plms=False,
+        guidance_scale=7.5,
+        negative_prompt=(
+            "longbody, lowres, bad anatomy, bad hands, missing fingers, "
+            "extra digit, fewer digits, cropped, worst quality, low quality"
+        ),
+    )
+
+    result = _run_gligen_in_memory(meta, gligen_args)
+    return result.convert("RGB").resize((512, 512))
+
+###########################################################################
+#  5) ControlNet line-art refinement                                      #
+###########################################################################
+def refine_with_controlnet_lineart(input_image: Image.Image, prompt: str) -> Image.Image:
+    """
+    Takes a PIL image, extracts line-art via LineartDetector,
+    and refines with ControlNet, returning a new PIL image.
+    """
     lineart_detector = LineartDetector.from_pretrained("lllyasviel/Annotators")
+    working_img = input_image.convert("RGB").resize((512, 512))
+    control_image = lineart_detector(working_img)
 
-    # Load intermediate face
-    intermediate_img = Image.open(input_image_path).convert("RGB").resize((512, 512))
-
-    # Convert to line art
-    control_image = lineart_detector(intermediate_img)
-    control_image.save("control_image_lineart.png")
-    print("[ControlNet] Generated line art -> control_image_lineart.png")
-
-    # Load ControlNet checkpoint + pipeline
-    controlnet = ControlNetModel.from_pretrained(controlnet_checkpoint, torch_dtype=torch.float16).to(device)
+    controlnet = ControlNetModel.from_pretrained(CONTROLNET_CKPT_PATH, torch_dtype=torch.float16).to(device)
     pipe = StableDiffusionControlNetPipeline.from_pretrained(
-        "runwayml/stable-diffusion-v1-5",  # or whichever base SD you want
+        "runwayml/stable-diffusion-v1-5",
         controlnet=controlnet,
         torch_dtype=torch.float16
     ).to(device)
+
     pipe.scheduler = UniPCMultistepScheduler.from_config(pipe.scheduler.config)
 
     generator = torch.manual_seed(42)
@@ -126,75 +226,143 @@ def stage2_refine_with_controlnet(
         generator=generator
     ).images[0]
 
-    final_image.save(output_path)
-    print(f"[ControlNet] Wrote final image: {output_path}")
+    return final_image
 
-    return output_path
+###########################################################################
+#  MAIN ITERATIVE LOOP                                                    #
+###########################################################################
+def main_iterative_loop():
+    """
+    Demonstration loop where each iteration:
+      - Asks for a text prompt
+      - (Optional) uses the last final image or a new user-provided image
+        in GLIGEN, or bypasses GLIGEN entirely for ControlNet
+      - Displays intermediate + final results in memory (matplotlib)
+      - Stores final image in last_final_image for the next iteration
+    """
+    import matplotlib.pyplot as plt
+    last_final_image = None
 
+    while True:
+        print("\n--- Iterative Face Creation ---")
+        user_prompt = input("Enter a description (or 'exit'): ")
+        if user_prompt.strip().lower() == "exit":
+            print("Exiting the loop.")
+            break
 
-def main():
-    # ------------------------------
-    # Ask the user for text description
-    # ------------------------------
-    suspect_description = input(
-        "Enter a description of the suspect's face (e.g., 'A male face with short brown hair, large eyes, a scar on left cheek'): "
-    )
-    if not suspect_description.strip():
-        suspect_description = "A male face with short hair, large eyes, a scar on left cheek"
+        # Prompt user if they want to re-use the last final image in GLIGEN
+        # or provide a new image path
+        if last_final_image is not None:
+            reuse = input("Use last final image as GLIGEN reference? (y/n): ").strip().lower()
+        else:
+            reuse = "n"
 
-    # ------------------------------
-    # Paths to your models
-    # ------------------------------
-    gligen_ckpt = "./gligen_checkpoints/checkpoint_generation_text.pth"
-    controlnet_ckpt = "./ControlNet-checkpoints"  # or huggingface ID or local path
+        if reuse == "y" and last_final_image is not None:
+            # 1) Feed last_final_image to GLIGEN as a full bounding box (text+image checkpoint)
+            print("[GLIGEN] Using last final image as reference bounding box...")
+            try:
+                intermediate_img = generate_gligen_full_image_from_pil(user_prompt, last_final_image)
+                plt.figure()
+                plt.imshow(intermediate_img)
+                plt.title("Intermediate (GLIGEN from last_final_image)")
+                plt.axis('off')
+                plt.show()
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+                # 2) ControlNet refine
+                print("[ControlNet] Refining structure via line-art...")
+                final_img = refine_with_controlnet_lineart(intermediate_img, user_prompt)
+                plt.figure()
+                plt.imshow(final_img)
+                plt.title("Final (ControlNet) Refined")
+                plt.axis('off')
+                plt.show()
 
-    # ------------------------------
-    # Stage 1: GLIGEN bounding-box generation
-    # ------------------------------
-    intermediate_path = "gligen_face.png"
-    stage1_generate_with_gligen(
-        gligen_ckpt_path=gligen_ckpt,
-        prompt=suspect_description,
-        output_path=intermediate_path
-    )
+                last_final_image = final_img
 
-    # ------------------------------
-    # Stage 2: ControlNet refinement
-    # ------------------------------
-    final_path = "final_refined_face.png"
-    stage2_refine_with_controlnet(
-        controlnet_checkpoint=controlnet_ckpt,
-        input_image_path=intermediate_path,
-        prompt=suspect_description + ", photorealistic, high detail",
-        output_path=final_path,
-        device=device
-    )
+            except Exception as e:
+                print(f"Error reusing last image in GLIGEN: {e}")
+                continue
 
-    # ------------------------------
-    # Plot the intermediate and final images
-    # ------------------------------
-    # Important: 1) use matplotlib, 2) each chart is its own figure, 3) no custom colors/styles
+        else:
+            # If not re-using last_final_image, see if we have a new user-provided path
+            user_image_path = input("Optionally enter path to a reference image (press Enter to skip): ").strip()
+            if user_image_path.lower() == "exit":
+                print("Exiting the loop.")
+                break
 
-    # Intermediate
-    inter_img = Image.open(intermediate_path)
-    plt.figure()
-    plt.imshow(inter_img)
-    plt.title("Intermediate (GLIGEN) Generation")
-    plt.axis('off')
-    plt.show()
+            if user_image_path:
+                # The user gave an image path
+                try:
+                    test_img = Image.open(user_image_path).convert("RGB")
+                except Exception as e:
+                    print(f"Could not open user image: {e}")
+                    continue
 
-    # Final
-    final_img = Image.open(final_path)
-    plt.figure()
-    plt.imshow(final_img)
-    plt.title("Final (ControlNet) Refined")
-    plt.axis('off')
-    plt.show()
+                # Ask user if they want to feed the entire image to GLIGEN
+                choice = input("Send entire image to GLIGEN first? (y/n): ").strip().lower()
+                if choice.startswith('y'):
+                    # Stage 1: GLIGEN full bounding box
+                    try:
+                        intermediate_img = generate_gligen_full_image(user_prompt, user_image_path)
+                        plt.figure()
+                        plt.imshow(intermediate_img)
+                        plt.title("Intermediate (GLIGEN: Full Image Box)")
+                        plt.axis('off')
+                        plt.show()
 
-    print("Done. Plotted intermediate and final images.")
+                        # Stage 2: ControlNet
+                        final_img = refine_with_controlnet_lineart(intermediate_img, user_prompt)
+                        plt.figure()
+                        plt.imshow(final_img)
+                        plt.title("Final (ControlNet) Refined from GLIGEN Output")
+                        plt.axis('off')
+                        plt.show()
 
+                        last_final_image = final_img
 
+                    except Exception as e:
+                        print(f"Error in GLIGEN full-image approach: {e}")
+                        continue
+
+                else:
+                    # Skip GLIGEN, just refine with ControlNet
+                    final_img = refine_with_controlnet_lineart(test_img.resize((512,512)), user_prompt)
+                    plt.figure()
+                    plt.imshow(final_img)
+                    plt.title("Final (ControlNet) [User Image Provided, skipped GLIGEN]")
+                    plt.axis('off')
+                    plt.show()
+
+                    last_final_image = final_img
+
+            else:
+                # No user image => do default GLIGEN bounding boxes
+                print("[GLIGEN] Generating from default bounding boxes (hair, eyes, scar)...")
+                intermediate_img = generate_gligen_default_boxes(prompt=user_prompt)
+                plt.figure()
+                plt.imshow(intermediate_img)
+                plt.title("Intermediate (GLIGEN: Default Boxes)")
+                plt.axis('off')
+                plt.show()
+
+                print("[ControlNet] Refining structure via line-art...")
+                final_img = refine_with_controlnet_lineart(intermediate_img, user_prompt)
+                plt.figure()
+                plt.imshow(final_img)
+                plt.title("Final (ControlNet) Refined")
+                plt.axis('off')
+                plt.show()
+
+                last_final_image = final_img
+
+        # Loop again or exit
+        cont = input("Press Enter to do another iteration, or type 'exit' to quit: ")
+        if cont.strip().lower() == "exit":
+            print("Exiting the loop.")
+            break
+
+###########################################################################
+#  RUN if called directly                                                 #
+###########################################################################
 if __name__ == "__main__":
-    main()
+    main_iterative_loop()
