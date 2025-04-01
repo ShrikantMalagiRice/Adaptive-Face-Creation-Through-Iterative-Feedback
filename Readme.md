@@ -4,7 +4,7 @@ This project uses Gligen and ControlNet++ for enhanced text-to-image generation.
 
 ## 📁 Checkpoints Setup
 
-- Place the **Gligen** checkpoint file in the folder: `gligen_checkpoints` and rename it to 'checkpoint_generation_text.pth'
+- Place the **Gligen** checkpoint file in the folder: `gligen_checkpoints` and rename it to `checkpoint_generation_text.pth`
 - Place the **ControlNet++** checkpoint files in the folder: `ControlNet-checkpoints`
 
 ### 🔗 Download Checkpoints
