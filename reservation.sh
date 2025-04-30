@@ -1,0 +1,1 @@
+srun --partition=debug --pty --export=ALL --ntasks=1 --time=0:30:00 --gres=gpu:1 --mem=30G  /bin/bash
