@@ -55,6 +55,7 @@ opencv-python==4.11.0.86
 opencv-python-headless==4.11.0.86
 opt_einsum==3.4.0
 packaging==24.2
+pandas==2.2.3
 parso==0.8.4
 pexpect==4.9.0
 pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1712154464349/work
@@ -68,6 +69,7 @@ Pygments==2.19.1
 pyparsing==3.2.3
 PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
 python-dateutil==2.9.0.post0
+pytz==2025.2
 PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_1725456134219/work
 regex==2024.11.6
 requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1717057054362/work
@@ -93,6 +95,7 @@ traitlets==5.14.3
 transformers==4.51.3
 triton==3.0.0
 typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+tzdata==2025.2
 urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1726496430923/work
 wcwidth==0.2.13
 Werkzeug==3.1.3

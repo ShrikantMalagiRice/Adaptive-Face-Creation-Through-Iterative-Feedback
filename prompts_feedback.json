@@ -1,0 +1,2002 @@
+[
+    {
+      "prompt": "A Middle Eastern man with round cheeks",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young man with high cheekbones",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Indigenous teenager with a mustache",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with a narrow chin",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Latino teenager with a strong jawline",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A South Asian teenager with a narrow chin",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A South Asian man with a mustache",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A East Asian young man with dimples",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Hispanic man with a scar",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A East Asian man with a strong jawline",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A South Asian teenager with a mustache",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A South Asian person with dimples",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Middle Eastern elderly woman with dimples",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with high cheekbones",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a scar",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A East Asian man with a strong jawline",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Latino elderly man with dimples",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A South Asian young woman with glasses",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A East Asian woman with a scar",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern person with a mustache",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Indigenous person with dimples",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A East Asian elderly woman with dimples",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Mixed race teenager with dimples",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a mustache",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with round cheeks",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with glasses",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A South Asian elderly man with glasses",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with high cheekbones",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young man with freckles",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Caucasian teenager with dimples",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A South Asian teenager with a mustache",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Indigenous woman with glasses",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Indigenous person with dimples",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Latino elderly woman with freckles",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a scar",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Indigenous man with high cheekbones",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Indigenous woman with glasses",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with glasses",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A South Asian elderly man with a narrow chin",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Caucasian young man with freckles",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Pacific Islander young man with dimples",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern elderly woman with a narrow chin",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with dimples",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Pacific Islander man with a narrow chin",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Indigenous young woman with high cheekbones",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A South Asian elderly man with glasses",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Indigenous teenager with a narrow chin",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with freckles",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A South Asian man with glasses",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with high cheekbones",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A East Asian teenager with a mustache",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Indigenous elderly man with a scar",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Caucasian woman with dimples",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Latino young woman with a beard",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Mixed race man with a beard",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with a mustache",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern elderly woman with high cheekbones",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A African American teenager with high cheekbones",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern elderly woman with freckles",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Hispanic person with dimples",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Mixed race person with a mustache",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Caucasian teenager with a strong jawline",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with a narrow chin",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Hispanic elderly woman with glasses",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with a scar",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Indigenous woman with a narrow chin",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Indigenous elderly man with round cheeks",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a strong jawline",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly man with dimples",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Caucasian person with round cheeks",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Middle Eastern man with a beard",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a scar",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Hispanic person with round cheeks",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Latino young man with a mustache",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Latino person with a strong jawline",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian young man with a narrow chin",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A South Asian person with glasses",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A East Asian man with a beard",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race person with a strong jawline",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A South Asian person with high cheekbones",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Latino young woman with a scar",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Latino young woman with a mustache",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A African American elderly man with a strong jawline",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A South Asian woman with glasses",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Mixed race elderly man with glasses",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Latino teenager with a beard",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Indigenous elderly woman with dimples",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Caucasian young man with glasses",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Latino teenager with round cheeks",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A East Asian person with dimples",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Latino man with a narrow chin",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A African American teenager with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Indigenous man with a narrow chin",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Pacific Islander man with round cheeks",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian man with a scar",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A Latino man with a beard",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Indigenous person with high cheekbones",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Indigenous person with glasses",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A East Asian elderly woman with a beard",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Latino teenager with a narrow chin",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Indigenous teenager with a strong jawline",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A East Asian person with a beard",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Middle Eastern person with glasses",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Latino young man with dimples",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A South Asian man with high cheekbones",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A East Asian elderly woman with a mustache",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Hispanic person with glasses",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Pacific Islander person with dimples",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a mustache",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with dimples",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with dimples",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with a mustache",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with dimples",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A South Asian young woman with freckles",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a scar",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Mixed race teenager with high cheekbones",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Caucasian young man with high cheekbones",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Middle Eastern woman with glasses",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with a scar",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A East Asian young man with a scar",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a mustache",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander man with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Latino elderly woman with a mustache",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A African American young man with round cheeks",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young man with a beard",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with dimples",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Mixed race woman with glasses",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with a beard",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Hispanic teenager with a beard",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with freckles",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Latino young woman with a narrow chin",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Indigenous elderly woman with a beard",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A African American elderly woman with a narrow chin",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Pacific Islander man with a beard",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Latino young woman with glasses",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A East Asian man with glasses",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Caucasian teenager with a scar",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A East Asian young woman with freckles",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A East Asian elderly man with a scar",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A South Asian young man with a scar",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Latino young woman with glasses",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Middle Eastern young man with glasses",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with a scar",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A South Asian elderly woman with freckles",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Indigenous young man with freckles",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Latino teenager with a mustache",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A South Asian elderly woman with a beard",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with dimples",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with a narrow chin",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Indigenous man with round cheeks",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Middle Eastern woman with a strong jawline",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with a scar",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Caucasian young woman with freckles",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Indigenous elderly man with a scar",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Hispanic man with a narrow chin",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Latino woman with a strong jawline",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Indigenous young man with freckles",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Caucasian young man with high cheekbones",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A East Asian elderly woman with high cheekbones",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Mixed race man with a narrow chin",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A African American person with a beard",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Caucasian woman with a scar",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A South Asian person with freckles",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Caucasian teenager with glasses",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Caucasian woman with round cheeks",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Pacific Islander young man with round cheeks",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Pacific Islander young man with a beard",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Latino woman with freckles",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with high cheekbones",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Caucasian teenager with glasses",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Hispanic woman with round cheeks",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Indigenous man with dimples",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race woman with glasses",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Middle Eastern young man with round cheeks",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Mixed race young woman with round cheeks",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Mixed race young woman with dimples",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with a strong jawline",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander person with round cheeks",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A South Asian teenager with dimples",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A African American elderly woman with a beard",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A African American person with a scar",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A East Asian woman with a beard",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Mixed race teenager with a strong jawline",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a mustache",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A East Asian young woman with a beard",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic person with freckles",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with a narrow chin",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern young man with freckles",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race woman with round cheeks",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A East Asian man with a narrow chin",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic teenager with a mustache",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with glasses",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a narrow chin",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A East Asian young man with freckles",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Mixed race teenager with a strong jawline",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a beard",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Pacific Islander young man with a scar",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with freckles",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A East Asian man with glasses",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Pacific Islander young man with dimples",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A African American person with round cheeks",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Latino teenager with a narrow chin",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly man with glasses",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Indigenous person with a scar",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Latino young man with a narrow chin",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Mixed race man with freckles",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Indigenous young woman with glasses",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian teenager with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Hispanic elderly woman with high cheekbones",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Indigenous man with a strong jawline",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Latino teenager with high cheekbones",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with a scar",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Indigenous young man with a narrow chin",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with dimples",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Latino teenager with freckles",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A East Asian man with a scar",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Caucasian young woman with freckles",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a mustache",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Pacific Islander man with dimples",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Hispanic man with round cheeks",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Latino young woman with dimples",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with round cheeks",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Hispanic young man with a narrow chin",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with a strong jawline",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A East Asian person with a strong jawline",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A African American woman with a narrow chin",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A South Asian young man with round cheeks",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Indigenous elderly woman with high cheekbones",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A African American young man with a beard",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A South Asian young man with glasses",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Hispanic man with a mustache",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly man with a mustache",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Pacific Islander young man with dimples",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Indigenous man with a narrow chin",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Latino young woman with a scar",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Hispanic person with a beard",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A South Asian man with a strong jawline",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Indigenous woman with a scar",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Middle Eastern woman with a narrow chin",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with glasses",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with high cheekbones",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A East Asian young man with a mustache",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A South Asian young woman with round cheeks",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Caucasian woman with a narrow chin",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a mustache",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Indigenous teenager with a scar",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Latino man with high cheekbones",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A South Asian young woman with a strong jawline",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A African American person with glasses",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Middle Eastern man with glasses",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with freckles",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Indigenous elderly woman with a strong jawline",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A South Asian teenager with glasses",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A South Asian woman with dimples",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A African American woman with a mustache",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Latino person with a beard",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Indigenous man with dimples",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A East Asian young woman with round cheeks",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a strong jawline",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with dimples",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Latino young woman with a strong jawline",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with a strong jawline",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A South Asian elderly woman with a mustache",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a mustache",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Middle Eastern man with high cheekbones",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Indigenous young man with round cheeks",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Latino man with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Indigenous young woman with a narrow chin",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A African American young woman with glasses",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern young man with a strong jawline",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race woman with a scar",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Caucasian person with round cheeks",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A African American elderly man with a beard",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A African American young woman with freckles",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with a strong jawline",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a mustache",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Latino elderly man with freckles",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Middle Eastern man with freckles",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A East Asian man with round cheeks",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Caucasian man with glasses",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Hispanic man with a scar",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race elderly man with round cheeks",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Mixed race woman with a beard",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Pacific Islander person with a mustache",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Caucasian man with a scar",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Caucasian young man with high cheekbones",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A Mixed race young woman with glasses",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A African American elderly man with a narrow chin",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Latino young woman with a narrow chin",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A African American young woman with glasses",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Mixed race person with dimples",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A East Asian young woman with a scar",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Mixed race young woman with a beard",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A South Asian person with a scar",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A South Asian young woman with high cheekbones",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A African American young woman with glasses",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Mixed race person with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Indigenous young woman with a narrow chin",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A East Asian teenager with high cheekbones",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Pacific Islander elderly man with a beard",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with freckles",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with round cheeks",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern person with round cheeks",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with a narrow chin",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern man with a scar",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with a beard",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A South Asian teenager with high cheekbones",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A East Asian young man with round cheeks",
+      "feedback": "make the right eye amber eyes"
+    },
+    {
+      "prompt": "A Indigenous man with a mustache",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race man with a strong jawline",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Middle Eastern person with freckles",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a mustache",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A South Asian young man with a mustache",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A African American man with freckles",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian woman with a beard",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Hispanic teenager with a mustache",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian elderly man with freckles",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A African American person with round cheeks",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with high cheekbones",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A South Asian woman with round cheeks",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A African American man with glasses",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A East Asian teenager with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Latino elderly man with glasses",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Caucasian young man with a mustache",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with a strong jawline",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a scar",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A African American teenager with a mustache",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A South Asian young woman with a beard",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Mixed race person with a beard",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with a mustache",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Hispanic young man with glasses",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Mixed race teenager with high cheekbones",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A African American young man with high cheekbones",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A East Asian woman with freckles",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A African American young woman with a mustache",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A South Asian man with a scar",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A African American person with freckles",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Latino man with a strong jawline",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Latino young woman with a beard",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Latino elderly woman with round cheeks",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A African American man with glasses",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Caucasian man with a scar",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A South Asian young woman with a scar",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Latino young man with a mustache",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Mixed race woman with dimples",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Latino young man with freckles",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A African American woman with a mustache",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A South Asian elderly woman with round cheeks",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a mustache",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Hispanic young man with a strong jawline",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Indigenous man with glasses",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A South Asian teenager with dimples",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A South Asian woman with glasses",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern woman with round cheeks",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with round cheeks",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Latino elderly man with a strong jawline",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Caucasian young man with a scar",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A East Asian elderly woman with a beard",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A South Asian person with a beard",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly man with a mustache",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Indigenous person with a strong jawline",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Pacific Islander young man with a strong jawline",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with a strong jawline",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A South Asian person with glasses",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Indigenous teenager with a strong jawline",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A African American young woman with high cheekbones",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Latino elderly man with a narrow chin",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A African American man with a mustache",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race person with a mustache",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Mixed race man with a scar",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with a strong jawline",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with a strong jawline",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Caucasian person with a narrow chin",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A South Asian elderly man with freckles",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Caucasian man with freckles",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Pacific Islander man with a strong jawline",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Mixed race teenager with glasses",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Latino young man with round cheeks",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A East Asian elderly man with glasses",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander elderly woman with high cheekbones",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A East Asian man with a narrow chin",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A African American man with dimples",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Hispanic elderly woman with a strong jawline",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Hispanic young woman with a narrow chin",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Indigenous person with a strong jawline",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A South Asian young man with a strong jawline",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with glasses",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A African American elderly woman with high cheekbones",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Hispanic young man with freckles",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Pacific Islander woman with a beard",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A African American elderly man with dimples",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A East Asian person with a strong jawline",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Mixed race young man with glasses",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A Pacific Islander young woman with a scar",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Mixed race person with dimples",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Latino young man with round cheeks",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Indigenous person with glasses",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Mixed race teenager with glasses",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Caucasian man with a mustache",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Hispanic woman with a scar",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with a strong jawline",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a mustache",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A African American person with round cheeks",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Latino elderly woman with a narrow chin",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Caucasian woman with a scar",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Hispanic young woman with a scar",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Indigenous young man with a scar",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A South Asian teenager with a narrow chin",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A Indigenous man with freckles",
+      "feedback": "make the left eye brown eyes"
+    },
+    {
+      "prompt": "A East Asian elderly woman with a scar",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with a mustache",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A East Asian young man with round cheeks",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A African American young woman with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Mixed race young woman with high cheekbones",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A South Asian young woman with dimples",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A African American elderly woman with dimples",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with glasses",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A East Asian elderly man with a mustache",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A East Asian teenager with glasses",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with glasses",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Mixed race person with a narrow chin",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A East Asian person with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Indigenous elderly man with dimples",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A South Asian teenager with dimples",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Pacific Islander young man with dimples",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a scar",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Hispanic young woman with freckles",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A East Asian elderly man with a narrow chin",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Middle Eastern man with high cheekbones",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A Caucasian young woman with round cheeks",
+      "feedback": "make the lips more defined"
+    },
+    {
+      "prompt": "A South Asian young woman with a beard",
+      "feedback": "make the left eye hazel eyes"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with glasses",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Hispanic elderly man with a beard",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Mixed race elderly man with a narrow chin",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A South Asian young woman with a mustache",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A Latino teenager with a beard",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Mixed race man with a strong jawline",
+      "feedback": "make the right eye blue eyes"
+    },
+    {
+      "prompt": "A South Asian man with high cheekbones",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Caucasian teenager with freckles",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Pacific Islander woman with round cheeks",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Hispanic teenager with round cheeks",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with glasses",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Hispanic person with high cheekbones",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A African American woman with freckles",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A African American young woman with a scar",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Hispanic young man with a strong jawline",
+      "feedback": "make the right eyebrow thicker"
+    },
+    {
+      "prompt": "A South Asian person with a beard",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A Hispanic woman with freckles",
+      "feedback": "make the left eyebrow straighter"
+    },
+    {
+      "prompt": "A Caucasian young woman with a beard",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A East Asian woman with glasses",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Middle Eastern man with a mustache",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Hispanic young man with dimples",
+      "feedback": "make the right eye brown eyes"
+    },
+    {
+      "prompt": "A Mixed race man with a mustache",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Hispanic elderly man with high cheekbones",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A East Asian man with high cheekbones",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with round cheeks",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Hispanic elderly woman with high cheekbones",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A South Asian elderly woman with a narrow chin",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A African American elderly woman with round cheeks",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A East Asian elderly man with high cheekbones",
+      "feedback": "make the lips thinner"
+    },
+    {
+      "prompt": "A Middle Eastern young woman with a narrow chin",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A East Asian elderly man with dimples",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Middle Eastern teenager with freckles",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Indigenous elderly woman with high cheekbones",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A African American teenager with high cheekbones",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A African American man with a mustache",
+      "feedback": "make the left eye green eyes"
+    },
+    {
+      "prompt": "A Caucasian man with a strong jawline",
+      "feedback": "make the left eye gray eyes"
+    },
+    {
+      "prompt": "A Middle Eastern woman with high cheekbones",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A East Asian young woman with a scar",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A African American young woman with a mustache",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A South Asian elderly man with freckles",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Middle Eastern young man with a narrow chin",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with high cheekbones",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Caucasian young man with a scar",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Pacific Islander young man with a scar",
+      "feedback": "make the right eyebrow straighter"
+    },
+    {
+      "prompt": "A Middle Eastern young man with a strong jawline",
+      "feedback": "make the nose more pronounced"
+    },
+    {
+      "prompt": "A South Asian woman with a narrow chin",
+      "feedback": "make the left eyebrow bushier"
+    },
+    {
+      "prompt": "A Indigenous woman with freckles",
+      "feedback": "make the nose straighter"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with high cheekbones",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Mixed race elderly woman with dimples",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A Middle Eastern woman with a mustache",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Mixed race young man with round cheeks",
+      "feedback": "make the left eye blue eyes"
+    },
+    {
+      "prompt": "A Hispanic woman with dimples",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A Hispanic person with a strong jawline",
+      "feedback": "make the left eyebrow thinner"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with a narrow chin",
+      "feedback": "make the right eye hazel eyes"
+    },
+    {
+      "prompt": "A African American man with glasses",
+      "feedback": "make the right eyebrow bushier"
+    },
+    {
+      "prompt": "A Latino elderly man with a beard",
+      "feedback": "make the lips wider"
+    },
+    {
+      "prompt": "A South Asian woman with a strong jawline",
+      "feedback": "make the left eye amber eyes"
+    },
+    {
+      "prompt": "A Pacific Islander teenager with high cheekbones",
+      "feedback": "make the right eyebrow thinner"
+    },
+    {
+      "prompt": "A Latino man with dimples",
+      "feedback": "make the lips fuller"
+    },
+    {
+      "prompt": "A Middle Eastern elderly man with a scar",
+      "feedback": "make the right eye gray eyes"
+    },
+    {
+      "prompt": "A Latino woman with freckles",
+      "feedback": "make the right eyebrow more arched"
+    },
+    {
+      "prompt": "A Pacific Islander man with a scar",
+      "feedback": "make the nose wider"
+    },
+    {
+      "prompt": "A Mixed race woman with freckles",
+      "feedback": "make the right eye green eyes"
+    },
+    {
+      "prompt": "A Caucasian elderly woman with a scar",
+      "feedback": "make the nose narrower"
+    },
+    {
+      "prompt": "A Middle Eastern person with a strong jawline",
+      "feedback": "make the left eyebrow thicker"
+    },
+    {
+      "prompt": "A Caucasian teenager with a mustache",
+      "feedback": "make the left eyebrow more arched"
+    },
+    {
+      "prompt": "A African American young woman with round cheeks",
+      "feedback": "make the right eye gray eyes"
+    }
+  ]
